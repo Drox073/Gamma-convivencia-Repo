@@ -2,3 +2,4 @@ Primer codigo de prueba
 Realizar los combios necesarios
 Una vez realizado
 volver a realizar un segundo cambio con commit
+Tener en cuenta que se debe realizar una RAMA
