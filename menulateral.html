@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar UNAB</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Sidebar container */
+    .sidebar {
+      height: 100vh;                /* Full screen height */
+      width: 240px;                 /* Fixed width */
+      position: fixed;              /* Stays on the left even when scrolling */
+      top: 0;
+      left: 0;
+      background-color: #000000;    /* Dark gray background */
+      padding-top: 20px;            /* Space at the top */
+    }
+
+    /* Sidebar title */
+    .sidebar h2 {
+      color: #ecf0f1;               /* White text */
+      text-align: center;           /* Centered */
+      margin-bottom: 20px;          /* Space below */
+      font-size: 20px;              /* Font size */
+    }
+
+    /* Sidebar links */
+    .sidebar a {
+      padding: 14px 20px;           /* Inner spacing */
+      text-decoration: none;        /* No underline */
+      font-size: 16px;              /* Font size */
+      color: #ecf0f1;               /* White text */
+      display: block;               /* Each link takes full line */
+      transition: 0.3s;             /* Smooth hover effect */
+    }
+
+    /* Hover effect for links */
+    .sidebar a:hover {
+      background-color: #1abc9c;    /* Green background on hover */
+      color: #fff;                  /* White text on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar with menu options -->
+  <div class="sidebar">
+    <h2>UNAB</h2>
+    <a href="{% url 'perfil' %}">👤 Perfil</a>
+    <a href="{% url 'problema_tecnico' %}">⚠️ Problema Técnico</a>
+    <a href="{% url 'ficha_estudiante' %}">📑 Ficha Estudiante</a>
+    <a href="{% url 'certificados' %}">📜 Certificados</a>
+    <a href="{% url 'antecedentes' %}">💉 Antecedentes y Vacunas</a>
+    <a href="{% url 'logout' %}"> Cerrar Sesión</a>
+  </div>
+
+</body>
+</html>
